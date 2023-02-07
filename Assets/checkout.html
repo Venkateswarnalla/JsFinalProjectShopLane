@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SHOPLANE - A Place For Shopping</title>
+
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://kit.fontawesome.com/35c398e458.js"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="topbar">
+            <div id="left-menu">
+                <div id="logo">
+                    <a href="./index.html"><span>shop</span>lane</a></div>
+                <a href="../index.html#clothing">clothing</a>
+                <a href="../index.html#accessories">accessories</a>
+            </div>
+            <div id="search-wrapper">
+                <i class="fas fa-search"></i>
+                <input id="search-box" type="text" name="search" placeholder="Search for Clothing and Accessories" />
+
+            </div>
+            <div class="right-menu">
+                <div id="cart-wrapper">
+                    <p id="cart-count"></p>
+                    <a href="./checkout.html"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+            <img id="userData" src="image/user.png" />
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+        </nav>
+    </header>
+    <main class="section-wrapper">
+        <section id="cart">
+            <h1>Checkout</h1>
+            <div class="cart-container">
+                <div class="left-side">
+                    <p>Total Items: <span id="number-of-item"></span></p>
+                    <div class="cart-items" id="cart-item-container"></div>
+                </div>
+                <div class="right-side">
+                    <div class="total-amount">
+                        <h2>Total Amount</h2>
+                        <p>Total Amount: Rs <span id="total-amount"></span></p>
+                        <a href="./orderconfirm.html">
+                            <button id="place-order">Place Order</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <img id="edyoda-projects-logo" src="images/OKAY6Fl.png" alt="EdYoda Projects Logo" />
+
+    <!-- FOOTER SECTION START -->
+    <footer>
+        <ul class="online-store">
+            <li>
+                <h3>Online Store</h3>
+            </li>
+            <li><a href="#">Men Clothing</a></li>
+            <li><a href="#">Women Clothing</a></li>
+            <li><a href="#">Men Accessories</a></li>
+            <li><a href="#">Women Accessories</a></li>
+        </ul>
+        <ul class="helpful-links">
+            <li>
+                <h3>Helpful Links</h3>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="patners">
+            <li>
+                <h3>Patners</h3>
+            </li>
+            <li><a href="#">Zara</a></li>
+            <li><a href="#">Pantaloons</a></li>
+            <li><a href="#">Levis</a></li>
+            <li><a href="#">Ucb</a></li>
+            <li><a href="#">+ Many More</a></li>
+        </ul>
+        <ul class="address">
+            <li>
+                <h3>Address</h3>
+            </li>
+            <li>Building 101</li>
+            <li>Central Avenue</li>
+            <li>LA - 902722</li>
+            <li>United States</li>
+        </ul>
+    </footer>
+
+    <!-- FOOTER SECTION END  -->
+
+    <!-- JavaScript, jQuery & Slick Links -->
+    <script src="./js/index.js"></script>
+    <script src="./js/checkout.js"></script>
+</body>
+
+</html>
